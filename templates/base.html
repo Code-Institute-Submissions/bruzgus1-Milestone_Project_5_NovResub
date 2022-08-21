@@ -50,7 +50,7 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Minion</strong>Shop</h2>
+                    <h2 class="logo-font text-black my-0"><strong>Minion</strong> Shop</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -78,16 +78,16 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0 bg-blue" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item">Product Management</a>
+                            <a href="" class="dropdown-item text-better-white">Product Management</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="" class="dropdown-item text-better-white">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item text-better-white">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item text-better-white">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item text-better-white">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -109,10 +109,22 @@
                 </ul>
             </div>
         </div>
+        <div class="row bg-blue">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 text-better-white navbar-dark">
+                <button class="navbar-toggler" style="border:1px solid white;" type="button" data-toggle="collapse"
+                    data-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
     </header>
 
     {% if messages %}
-    <div class="message-container"></div>
+    <div class=" message-container">
+    </div>
     {% endif %}
 
     {% block page_header %}

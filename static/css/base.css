@@ -57,8 +57,17 @@ body {
 }
 
 .text-better-white {
-    color: #F5FFFA;
+    color: #F5FFFA !important;
 }
+
+.bg-blue {
+    background: #246398 !important;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+}
+
 
 /* -------------------------------- Media Queries */
 
