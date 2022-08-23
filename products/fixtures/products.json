@@ -1,0 +1,37 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Coal Minion",
+        "description": "Coal Minions are a type of Minion that collects Coal. Coal Minions are unlocked at Coal 1 and can be placed on the Player's Island. The Coal Minion collects Coal.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/e/eb/SkyBlock_minion_coal_minion.png",
+        "image": "coal_minion.png"
+    }
+}, {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001600425",
+        "name": "Oak Minion",
+        "description": "Oak Minions are a type of Minion that collects Oak Wood. Oak Minions are unlocked at Oak Wood 1 and can be placed on the Player's Island. The Oak Minion collects Oak Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/e/e8/SkyBlock_minion_oak_minion.png",
+        "image": "oak_minion.png"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001600426",
+        "name": "Enchanted Lava Bucket",
+        "description": "The Enchanted Lava Bucket is a Minion Fuel that increases Minion speed by 25% for unlimited duration. Same as every fuel with unlimited duration, they can be taken from Minions without being consumed.",
+        "price": 1.99,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/5/59/SkyBlock_items_enchanted_lava_bucket.gif",
+        "image": "enchanted_lava_bucket.gif"
+    }
+}]

@@ -1,0 +1,57 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "mining",
+        "friendly_name": "Mining"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "foraging",
+        "friendly_name": "Foraging"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "farming",
+        "friendly_name": "Farming"
+    }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "fishing",
+        "friendly_name": "Fishing"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "combat",
+        "friendly_name": "Combat"
+    }
+}, {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+        "name": "minion_fuels",
+        "friendly_name": "Minion Fuels"
+    }
+}, {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+        "name": "minion_upgrades",
+        "friendly_name": "Minion Upgrades"
+    }
+}, {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+        "name": "minion_storages",
+        "friendly_name": "Minion Storages"
+    }
+}]
