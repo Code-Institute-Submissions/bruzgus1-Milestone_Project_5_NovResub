@@ -44,8 +44,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #246398;
+    color: #F5FFFA;
 }
 
 .text-black {
