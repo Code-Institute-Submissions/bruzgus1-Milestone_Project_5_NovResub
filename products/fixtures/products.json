@@ -3,35 +3,1055 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340155",
-        "name": "Coal Minion",
-        "description": "Coal Minions are a type of Minion that collects Coal. Coal Minions are unlocked at Coal 1 and can be placed on the Player's Island. The Coal Minion collects Coal.",
-        "price": 0.99,
+        "name": "Cobblestone Minion",
+        "description": "Cobblestone Minions are unlocked at Cobblestone 1 and can be placed on the Player's Island. The Cobblestone Minion collects Cobblestone.",
+        "price": 0.49,
         "category": 1,
-        "image_url": "https://wiki.hypixel.net/images/e/eb/SkyBlock_minion_coal_minion.png",
-        "image": "coal_minion.png"
+        "image_url": "https://wiki.hypixel.net/images/7/72/SkyBlock_minion_cobblestone_minion.png",
+        "image": "cobblestone_minion.png"
     }
 }, {
     "pk": 2,
     "model": "products.product",
     "fields": {
         "sku": "pp5001600425",
+        "name": "Obsidian Minion",
+        "description": "Obsidian Minions are unlocked at Obsidian 1 Collection and can be placed on the Player's Island. The Obsidian Minion collects Obsidian.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/5/5d/SkyBlock_minion_obsidian_minion.png",
+        "image": "obsidian_minion.png"
+    }
+}, {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001730010",
+        "name": "Glowstone Minion",
+        "description": "Glowstone Minions are unlocked at Glowstone Dust 1 and can be placed on the Player's Island. The Glowstone Minion collects Glowstone Dust.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/c/cd/SkyBlock_minion_glowstone_minion.png",
+        "image": "glowstone_minion.png"
+    }
+}, {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001890157",
+        "name": "Gravel Minion",
+        "description": "Gravel Minions are unlocked at Gravel 1 and can be placed on the Player's Island. The Gravel Minion collects Gravel. When the minion is equipped with a Flint Shovel, it will start collecting Flint.",
+        "price": 0.49,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/6/62/SkyBlock_minion_gravel_minion.png",
+        "image": "gravel_minion.png"
+    }
+}, {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002111605",
+        "name": "Sand Minion",
+        "description": "Sand Minions are unlocked at Sand 1 and can be placed on the Player's Island. The Sand Minion collects Sand.",
+        "price": 0.49,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/6/6d/SkyBlock_minion_sand_minion.png",
+        "image": "sand_minion.png"
+    }
+}, {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002260206",
+        "name": "Red Sand Minion",
+        "description": "Red Sand Minions are unlocked at Red Sand 1 and can be placed on the Player's Island. The Red Sand Minion collects Red Sand. Each minion tier requires an increasing amount of Barbarian Reputation starting with 500 Barbarian Reputation at tier 1",
+        "price": 3.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/7/70/SkyBlock_minion_red_sand_minion.png",
+        "image": "red_sand_minion.png"
+    }
+}, {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002440521",
+        "name": "Mycelium Minion",
+        "description": "Mycelium Minions are unlocked at Mycelium 1 and can be placed on the Player's Island. The Mycelium Minion collects Mycelium. Each minion tier requires an increasing amount of Mage Reputation starting with 500 Mage Reputation at tier 1.",
+        "price": 3.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/e/e3/SkyBlock_minion_mycelium_minion.png",
+        "image": "mycelium_minion.png"
+    }
+}, {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002601115",
+        "name": "Ice Minion",
+        "description": "The Ice Minion is unlocked at Ice 1 and can be placed on the Player's Island. The Ice Minion collects Ice.",
+        "price": 0.49,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/f/fb/SkyBlock_minion_ice_minion.png",
+        "image": "ice_minion.png"
+    }
+}, {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002690715",
+        "name": "Snow Minion",
+        "description": "Snow Minions are obtained from opening Gifts. The Snow Minion collects Ice",
+        "price": 2.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/3/39/SkyBlock_minion_snow_minion.png",
+        "image": "snow_minion.png"
+    }
+}, {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002701115",
+        "name": "Coal Minion",
+        "description": "Coal Minions are unlocked at Coal 1 and can be placed on the Player's Island. The Coal Minion collects Coal.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/e/eb/SkyBlock_minion_coal_minion.png",
+        "image": "coal_minion.png"
+    }
+}, {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002761055",
+        "name": "Iron Minion",
+        "description": "Iron Minions are unlocked at Iron Ingot 1 and can be placed on the Player's Island. The Iron Minion collects Iron Ore unless an Auto Smelter or Dwarven Super Compactor is used, and it will collect Iron Ingots.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/3/37/SkyBlock_minion_iron_minion.png",
+        "image": "iron_minion.png"
+    }
+}, {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002820069",
+        "name": "Gold Minion",
+        "description": "The Gold Minion recipes are unlocked at Gold Ingot 1. They can be placed on the Player's Island. The Gold Minion collects Gold Ore, unless an Auto Smelter or Dwarven Super Compactor is used, and it will collect Gold Ingots.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/9/9e/SkyBlock_minion_gold_minion.png",
+        "image": "gold_minion.png"
+    }
+}, {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002820147",
+        "name": "Diamond Minion",
+        "description": "Diamond Minions are unlocked at Diamond 1 and can be placed on the Player's Island. The Diamond Minion collects Diamond.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/b/b9/SkyBlock_minion_diamond_minion.png",
+        "image": "diamond_minion.png"
+    }
+}, {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002910572",
+        "name": "Lapis Minion",
+        "description": "Lapis Minions are unlocked at Lapis 1 and can be placed on the Player's Island. The Lapis Minion collects Lapis Lazuli.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/3/39/SkyBlock_minion_lapis_minion.png",
+        "image": "lapis_minion.png"
+    }
+}, {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5002990740",
+        "name": "Redstone Minion",
+        "description": "Redstone Minions are unlocked at Redstone 1 and can be placed on the Player's Island. The Redstone Minion collects Redstone.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/e/e7/SkyBlock_minion_redstone_minion.png",
+        "image": "redstone_minion.png"
+    }
+}, {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003050248",
+        "name": "Emerald Minion",
+        "description": "The Emerald Minion recipes are unlocked at Emerald 1. They can be placed on the Player's Island. The Emerald Minion collects Emeralds.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/d/d7/SkyBlock_minion_emerald_minion.png",
+        "image": "emerald_minion.png"
+    }
+}, {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003070787",
+        "name": "Quartz Minion",
+        "description": "Quartz Minions are unlocked at Quartz 1 and can be placed on the Player's Island. The Quartz Minion collects Nether Quartz.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/6/69/SkyBlock_minion_quartz_minion.png",
+        "image": "quartz_minion.png"
+    }
+}, {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003090182",
+        "name": "End Stone Minion",
+        "description": "End Stone Minion is unlocked at Endstone 1 and can be placed on the Player's Island. The End Stone Minion collects End Stone.",
+        "price": 0.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/6/6a/SkyBlock_minion_end_stone_minion.png",
+        "image": "end_stone_minion.png"
+    }
+}, {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003090186",
+        "name": "Mithril Minion",
+        "description": "Mithril Minions are unlocked at Mithril 1 and can be placed on the Player's Island. The Mithril Minion collects Mithril",
+        "price": 1.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/b/b9/SkyBlock_minion_mithril_minion.png",
+        "image": "mithril_minion.png"
+    }
+}, {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003161326",
+        "name": "Hard Stone Minion",
+        "description": "Hard Stone Minions are unlocked at Hard Stone 1 and can be placed on the Player's Island. The Hard Stone Minion collects Hard Stone",
+        "price": 1.99,
+        "category": 1,
+        "image_url": "https://wiki.hypixel.net/images/5/5b/SkyBlock_minion_hard_stone_minion.png",
+        "image": "hard_stone_minion.png"
+    }
+}, {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003230723",
         "name": "Oak Minion",
-        "description": "Oak Minions are a type of Minion that collects Oak Wood. Oak Minions are unlocked at Oak Wood 1 and can be placed on the Player's Island. The Oak Minion collects Oak Wood.",
+        "description": "Oak Minions are unlocked at Oak Wood 1 and can be placed on the Player's Island. The Oak Minion collects Oak Wood.",
         "price": 0.99,
         "category": 2,
         "image_url": "https://wiki.hypixel.net/images/e/e8/SkyBlock_minion_oak_minion.png",
         "image": "oak_minion.png"
     }
 }, {
-    "pk": 3,
+    "pk": 22,
     "model": "products.product",
     "fields": {
-        "sku": "pp5001600426",
+        "sku": "pp5003270936",
+        "name": "Spruce Minion",
+        "description": "Spruce Minions are unlocked at Spruce Wood 1 Collection and can be placed on the Player's Island. The Spruce Minion collects Spruce Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/c/ca/SkyBlock_minion_spruce_minion.png",
+        "image": "spruce_minion.png"
+    }
+}, {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003360384",
+        "name": "birch Minion",
+        "description": "Birch Minions are unlocked at Birch Wood 1 Collection and can be placed on the Player's Island. The Birch Minion collects Birch Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/b/be/SkyBlock_minion_birch_minion.png",
+        "image": "birch_minion.png"
+    }
+}, {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003440111",
+        "name": "Dark Oak Minion",
+        "description": "Dark Oak Minions are unlocked at Dark Oak Wood 1 and can be placed on the Player's Island. The Dark Oak Minion collects Dark Oak Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/d/df/SkyBlock_minion_dark_oak_minion.png",
+        "image": "dark_oak_minion.png"
+    }
+}, {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003540313",
+        "name": "Acacia Minion",
+        "description": "The Acacia Minion Recipes are unlocked at Acacia Wood 1 and can be placed on the Player's Island. The Acacia Minion collects Acacia Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/1/1b/SkyBlock_minion_acacia_minion.png",
+        "image": "acacia_minion.png"
+    }
+}, {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003560513",
+        "name": "Jungle Minion",
+        "description": "Jungle Minions are unlocked at Jungle Wood 1 and can be placed on the Player's Island. The Jungle Minion collects Jungle Wood.",
+        "price": 0.99,
+        "category": 2,
+        "image_url": "https://wiki.hypixel.net/images/f/f7/SkyBlock_minion_jungle_minion.png",
+        "image": "jungle_minion.png"
+    }
+}, {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003560948",
+        "name": "Wheat Minion",
+        "description": "The Wheat Minion Recipes are unlocked in the Wheat Collection 1 and can be placed on the Player's Island. The Wheat Minion collects Wheat and Seeds.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/f/f9/SkyBlock_minion_wheat_minion.png",
+        "image": "wheat_minion.png"
+    }
+}, {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003570628",
+        "name": "Melon Minion",
+        "description": "Melon Minions are unlocked at Melon 1 Collection and can be placed on the Player's Island. The Melon Minion collects Melons.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/d/d6/SkyBlock_minion_melon_minion.png",
+        "image": "melon_minion.png"
+    }
+}, {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003620308",
+        "name": "Pumpkin Minion",
+        "description": "Pumpkin Minions are unlocked at Pumpkin 1 Collection and can be placed on the Player's Island. The Pumpkin Minion collects Pumpkins.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/c/cc/SkyBlock_minion_pumpkin_minion.png",
+        "image": "pumpkin_minion.png"
+    }
+}, {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003690115",
+        "name": "Carrot Minion",
+        "description": "Carrot Minions are unlocked at Carrot 1 and can be placed on the Player's Island. The Carrot Minion collects Carrots.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/f/f6/SkyBlock_minion_carrot_minion.png",
+        "image": "carrot_minion.png"
+    }
+}, {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003690116",
+        "name": "Potato Minion",
+        "description": "Potato Minions are unlocked at Potato 1 and can be placed on the Player's Island. The Potato Minion collects Potato",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/c/c4/SkyBlock_minion_potato_minion.png",
+        "image": "potato_minion.png"
+    }
+}, {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003780391",
+        "name": "Mushroom Minion",
+        "description": "Mushroom Minions are unlocked at Mushroom 1 and can be placed on the Private Island. The Mushroom Minion collects Red Mushrooms and Brown Mushrooms.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/0/02/SkyBlock_minion_mushroom_minion.png",
+        "image": "mushroom_minion.png"
+    }
+}, {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003790542",
+        "name": "Cactus Minion",
+        "description": "Cactus Minions are unlocked at Cactus 1 and can be placed on the Player's Island. The Cactus Minion collects Cactus.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/3/3f/SkyBlock_minion_cactus_minion.png",
+        "image": "cactus_minion.png"
+    }
+}, {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003831225",
+        "name": "Cocoa Beans Minion",
+        "description": "Cocoa Beans Minions are unlocked at Cocoa Beans 1 and can be placed on the Player's Island. The Cocoa Beans Minion collects Cocoa Beans.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/7/75/SkyBlock_minion_cocoa_beans_minion.png",
+        "image": "cocoa_beans_minion.png"
+    }
+}, {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003861402",
+        "name": "Sugar Cane Minion",
+        "description": "The Sugar Cane Minion recipe is unlocked at Sugar Cane 1. The Sugar Cane Minion collects Sugar Cane.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/2/2f/SkyBlock_minion_sugar_cane_minion.png",
+        "image": "sugar_cane_minion.png"
+    }
+}, {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003910638",
+        "name": "Nether Wart Minion",
+        "description": "Nether Wart Minions are unlocked at Nether Wart 1 Collection and can be placed on the Player's Island. The Nether Wart Minion collects Nether Wart",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/b/b8/SkyBlock_minion_nether_wart_minion.png",
+        "image": "nether_wart_minion.png"
+    }
+}, {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003950574",
+        "name": "Flower Minion",
+        "description": "Flower Minions are a type of Minion that generates and collects Flowers. The flowers they place are random and must be on Grass. The Flower Minion collects Flowers",
+        "price": 9.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/a/a4/SkyBlock_minion_flower_minion.png",
+        "image": "flower_minion.png"
+    }
+}, {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003950576",
+        "name": "Cow Minion",
+        "description": "Cow Minions are unlocked at Leather 1 and can be placed on the Player's Island. The Cow Minion kills Cows and collects both Raw Beef and Leather.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/a/ad/SkyBlock_minion_cow_minion.png",
+        "image": "cow_minion.png"
+    }
+}, {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960062",
+        "name": "Pig Minion",
+        "description": "Pig Minions are unlocked at Raw Porkchop 1 Collection and can be placed on the Player's Island. The Pig Minion spawns and kills Pigs to collect Raw Porkchops.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/4/4d/SkyBlock_minion_pig_minion.png",
+        "image": "pig_minion.png"
+    }
+}, {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960682",
+        "name": "Chicken Minion",
+        "description": "Chicken Minions are unlocked at Raw Chicken 1 and can be placed on the Player's Island. The Chicken Minion collects Raw Chicken and Feathers. Eggs can also be collected when the minion uses an Enchanted Egg minion upgrade.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/6/66/SkyBlock_minion_chicken_minion.png",
+        "image": "chicken_minion.png"
+    }
+}, {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003960775",
+        "name": "Sheep Minion",
+        "description": "Sheep Minions are unlocked at Mutton 1 Collection and can be placed on the Player's Island. The Sheep Minion collects Mutton and White Wool",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/c/ca/SkyBlock_minion_sheep_minion.png",
+        "image": "sheep_minion.png"
+    }
+}, {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003990736",
+        "name": "Rabbit Minion",
+        "description": "Rabbit Minions are unlocked at Rabbit 1 Collection and can be placed on the Player's Island. The Rabbit Minion collects Raw Rabbit, Rabbit's Foot and Rabbit Hide.",
+        "price": 0.99,
+        "category": 3,
+        "image_url": "https://wiki.hypixel.net/images/7/75/SkyBlock_minion_rabbit_minion.png",
+        "image": "rabbit_minion.png"
+    }
+}, {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5003990746",
+        "name": "Clay Minion",
+        "description": "The Clay Minion recipes are unlocked at Clay 1. They can be placed on the Player's Island. The Clay Minions collect Clay.",
+        "price": 0.99,
+        "category": 4,
+        "image_url": "https://wiki.hypixel.net/images/d/d7/SkyBlock_minion_clay_minion.png",
+        "image": "clay_minion.png"
+    }
+}, {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004111503",
+        "name": "Fishing Minion",
+        "description": "Fishing Minions are unlocked at Raw Fish 2 and can be placed on the Player's Island. The Fishing Minion collects Raw Fish, Raw Salmon, Pufferfish, Clownfish, Prismarine Crystals, Prismarine Shard and Sponge",
+        "price": 1.99,
+        "category": 4,
+        "image_url": "https://wiki.hypixel.net/images/7/76/SkyBlock_minion_fishing_minion.png",
+        "image": "fishing_minion.png"
+    }
+}, {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004230059",
+        "name": "Zombie Minion",
+        "description": "Zombie Minions are unlocked at Rotten Flesh.png Rotten Flesh 1 and can be placed on the Player's Island. The Zombie Minion collects Rotten Flesh and, occasionally, some Poisonous Potatoes, Carrots or Potatoes.",
+        "price": 1.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/3/30/SkyBlock_minion_zombie_minion.png",
+        "image": "zombie_minion.png"
+    }
+}, {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004310089",
+        "name": "Skeleton Minion",
+        "description": "Skeleton Minion are unlocked at Bone 1 Collection and can be placed on the Player's Island. The Skeleton Minion collects Bones.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/b/b6/SkyBlock_minion_skeleton_minion.png",
+        "image": "skeleton_minion.png"
+    }
+}, {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004610254",
+        "name": "Creeper Minion",
+        "description": "Creeper Minions are unlocked at Gunpowder 1 and can be placed on the Player's Island. The Creeper Minion collects Gunpowder.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/5/5a/SkyBlock_minion_creeper_minion.png",
+        "image": "creeper_minion.png"
+    }
+}, {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004650050",
+        "name": "Spider Minion",
+        "description": "Spider Minions are unlocked at String 1 Collection and can be placed on the Player's Island. The Spider Minion collects String and Spider Eyes.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/7/75/SkyBlock_minion_spider_minion.png",
+        "image": "spider_minion.png"
+    }
+}, {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004821375",
+        "name": "Cave Spider Minion",
+        "description": "Cave Spider Minions are unlocked at Spider Eye 1 and can be placed on the Player's Island. The Cave Spider Minion collects String and Spider Eyes.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/5/5a/SkyBlock_minion_cave_spider_minion.png",
+        "image": "cave_spider_minion.png"
+    }
+}, {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004900522",
+        "name": "Blaze Minion",
+        "description": "Blaze Minions are unlocked at Blaze 1 and can be placed on the Player's Island. The Blaze Minion collects Blaze Rods. ",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/1/14/SkyBlock_minion_blaze_minion.png",
+        "image": "blaze_minion.png"
+    }
+}, {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004910158",
+        "name": "Magma Cube Minion",
+        "description": "Magma Cube Minions are unlocked at Magma Cube 1 Collection and can be placed on the Player's Island. The Magma Cube Minion collects Magma Creams.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/4/48/SkyBlock_minion_magma_cube_minion.png",
+        "image": "magma_cube_minion.png"
+    }
+}, {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004910477",
+        "name": "Enderman Minion",
+        "description": "Enderman Minions are unlocked at Ender Pearl 1 and can be placed on the Player's Island. The Enderman Minions collects Ender Pearls.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/f/fc/SkyBlock_minion_enderman_minion.png",
+        "image": "enderman_minion.png"
+    }
+}, {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004940703",
+        "name": "Ghast Minion",
+        "description": "Ghast Minions are unlocked at Ghast Tear 1 and can be placed on the Player's Island. It collects Ghast Tears.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/b/bc/SkyBlock_minion_ghast_minion.png",
+        "image": "ghast_minion.png"
+    }
+}, {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004991006",
+        "name": "Slime Minion",
+        "description": "Slime Minions are unlocked at Slimeball 1 and can be placed on the Player's Island. The Slime Minion collects Slimeballs.",
+        "price": 0.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/a/ad/SkyBlock_minion_slime_minion.png",
+        "image": "slime_minion.png"
+    }
+}, {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5004991162",
+        "name": "Revenant Minion",
+        "description": "The Revenant Minion's recipe is unlocked at Zombie Slayer 5 and can be placed on the Player's Island. The Revenant Minion collects Rotten Flesh at a much larger quantity than a regular Zombie Minion, as well as Diamonds.",
+        "price": 4.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/e/ea/SkyBlock_minion_revenant_minion.png",
+        "image": "revenant_minion.png"
+    }
+}, {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005000046",
+        "name": "Tarantula Minion",
+        "description": "The Tarantula Minion's recipe is unlocked at Spider Slayer 5 and can be placed on the Player's Island. The Tarantula Minion collects String, Spider Eyes, and Iron Ingots.",
+        "price": 4.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/f/fe/SkyBlock_minion_tarantula_minion.png",
+        "image": "tarantula_minion.png"
+    }
+}, {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005070254",
+        "name": "Voidling Minion",
+        "description": "The Voidling Minion's recipe is unlocked at Enderman Slayer 4 and can be placed on the Player's Island. The Voidling Minion Collects Obsidian and Quartz.",
+        "price": 7.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/b/b0/SkyBlock_minion_voidling_minion.png",
+        "image": "voidling_minion.png"
+    }
+}, {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005071145",
+        "name": "Inferno Minion",
+        "description": "The Inferno Minion's recipe is unlocked at Blaze Slayer 3 and can be placed on the Player's Island. The Inferno Minion Collects Crude Gabagool",
+        "price": 9.99,
+        "category": 5,
+        "image_url": "https://wiki.hypixel.net/images/a/a6/SkyBlock_minion_inferno_minion.png",
+        "image": "inferno_minion.png"
+    }
+}, {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005140282",
+        "name": "Catalyst",
+        "description": "The Catalyst is a Minion Fuel item that increases minion resource generation by x3 for 3 hours,",
+        "price": 0.49,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/4/43/SkyBlock_items_nether_star.gif",
+        "image": "catalyst.gif"
+    }
+}, {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005200166",
+        "name": "Hyper Catalyst",
+        "description": "The Hyper Catalyst is an Minion Fuel that increases minion resource generation by x4 for 6 hours.",
+        "price": 1.99,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/4/43/SkyBlock_items_nether_star.gif",
+        "image": "hyper_catalyst.gif"
+    }
+}, {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005210241",
+        "name": "Solar Panel",
+        "description": "The Solar Panel is a Minion Fuel that increases Minion speed by 25% for unlimited duration during the day. Same as every fuel with unlimited duration, they can be taken from Minions without being consumed.",
+        "price": 1.99,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/c/cb/SkyBlock_items_enchanted_daylight_detector.gif",
+        "image": "solar_panel.gif"
+    }
+}, {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005280104",
+        "name": "Foul Flesh",
+        "description": "The Foul Flesh is Minion Fuel that increases Minion Speed by 90% for 5 hours",
+        "price": 0.49,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/a/a5/Minecraft_items_charcoal.png",
+        "image": "foul_flesh.png"
+    }
+}, {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005310360",
+        "name": "Hamster Wheel",
+        "description": "The Hamster Wheel is Minion Fuel that increases Minion Speed by 50% for 24 hours",
+        "price": 0.49,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/3/32/SkyBlock_items_enchanted_trapdoor.gif",
+        "image": "hamster_wheel.gif"
+    }
+}, {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005330595",
         "name": "Enchanted Lava Bucket",
         "description": "The Enchanted Lava Bucket is a Minion Fuel that increases Minion speed by 25% for unlimited duration. Same as every fuel with unlimited duration, they can be taken from Minions without being consumed.",
         "price": 1.99,
         "category": 6,
         "image_url": "https://wiki.hypixel.net/images/5/59/SkyBlock_items_enchanted_lava_bucket.gif",
         "image": "enchanted_lava_bucket.gif"
+    }
+}, {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005330596",
+        "name": "Magma Bucket",
+        "description": "The Magma Bucket is a Minion Fuel that increases Minion speed by 35% for unlimited duration. Same as every fuel with unlimited duration, they can be taken from Minions without being consumed.",
+        "price": 3.99,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/5/59/SkyBlock_items_enchanted_lava_bucket.gif",
+        "image": "magma_bucket.gif"
+    }
+}, {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005430914",
+        "name": "Plasma Bucket",
+        "description": "The Plasma Bucket is a Minion Fuel that increases Minion speed by 35% for unlimited duration. Same as every fuel with unlimited duration, they can be taken from Minions without being consumed.",
+        "price": 5.99,
+        "category": 6,
+        "image_url": "https://wiki.hypixel.net/images/5/59/SkyBlock_items_enchanted_lava_bucket.gif",
+        "image": "plasma_bucket.gif"
+    }
+}, {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005430944",
+        "name": "Auto Smelter",
+        "description": "Auto Smelter is a Minion upgrade which automatically smelts everything the minion produces, which can be very useful for Ore Minions, like Iron Minion or Gold Minion.",
+        "price": 0.19,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/e/eb/Minecraft_items_furnace.png",
+        "image": "auto_smelter.png"
+    }
+}, {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005510265",
+        "name": "Krampust Helmet",
+        "description": "Krampus Helmet can be used as a minion upgrade occasionally generating Red Gifts, at a rate of approximately 1 Red Gift per 25,000 items generated.",
+        "price": 1.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/9/9f/SkyBlock_items_krampus_helmet.png",
+        "image": "krampust_helmet.png"
+    }
+}, {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005520201",
+        "name": "Budget Hopper",
+        "description": "Budget Hopper is a Minion Upgrade, Placing this hopper in a Minion shipping slot makes the minion sell overfill items at 50% NPC sell price.",
+        "price": 0.29,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/2/22/Minecraft_items_hopper.png",
+        "image": "budget_hopper.png"
+    }
+}, {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005520205",
+        "name": "Enchanter Hopper",
+        "description": "Enchanted Hopper is a Minion Upgrade, Placing this hopper in a Minion shipping slot makes the minion sell overfill items at 90% NPC sell price.",
+        "price": 1.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/0/09/SkyBlock_items_enchanted_hopper.gif",
+        "image": "enchanter_hopper.gif"
+    }
+}, {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005630545",
+        "name": "Compactor",
+        "description": "Compactor is a Minion Upgrade that turns the resources a minion produces into their block form. ",
+        "price": 0.19,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/b/bb/SkyBlock_items_enchanted_dropper.gif",
+        "image": "compactor.gif"
+    }
+}, {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005630605",
+        "name": "Super Compactor 3000",
+        "description": "The Super Compactor 3000 is similar to the Compactor, however instead of compressing items into blocks, they will turn into their enchanted form if enough materials are available.",
+        "price": 0.49,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/b/bb/SkyBlock_items_enchanted_dropper.gif",
+        "image": "super_compactor_3000.gif"
+    }
+}, {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005630637",
+        "name": "Dwarven Super Compactor",
+        "description": "The Dwarven Super Compactor is similar to the Super Compactor 3000, however on top of turning items into their enchanted form if enough materials are available, it also smelts them like an Auto Smelter",
+        "price": 0.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/b/bb/SkyBlock_items_enchanted_dropper.gif",
+        "image": "dwarwen_super_compactor.gif"
+    }
+}, {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005630638",
+        "name": "Mithril Infusion",
+        "description": "Mithril Infusion is an item which can be combined with Minions in an Anvil to increase their speed by 10% permanently.",
+        "price": 3.49,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/8/81/SkyBlock_items_mithril_infusion.png",
+        "image": "mithril_infusion.png"
+    }
+}, {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005650677",
+        "name": "Corrupt Soil",
+        "description": "The Corrupt Soil is a Minion Upgrade item that can turn mobs from Mob-spawning Minions to their corrupted forms. This Minion upgrade generates Sulphur and Corrupted Fragments.",
+        "price": 2.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/8/81/SkyBlock_items_corrupt_soil.png",
+        "image": "corrupt_soil.png"
+    }
+}, {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005700140",
+        "name": "Minion Expander",
+        "description": "The Minion Expander is a Minion upgrade that increases minion's usable area from 5x5 to 7x7 and minion collection rate by 5%.",
+        "price": 0.29,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/a/af/SkyBlock_items_enchanted_command_block.gif",
+        "image": "minion_expander.gif"
+    }
+}, {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005740430",
+        "name": "Diamond Spreading",
+        "description": "Diamond Spreading is a Minion Upgrade, Any Minion with this upgrade will occasionally collect a Diamond, alongside the regular item it was collecting.",
+        "price": 0.29,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/2/20/SkyBlock_items_enchanted_diamond.gif",
+        "image": "diamond_spreading.gif"
+    }
+}, {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005740561",
+        "name": "Potato Spreading",
+        "description": "Potato Spreading is a Minion Upgrade, Any Minion with this upgrade will occasionally collect a Potato, alongside the regular item it was collecting.",
+        "price": 0.19,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/4/45/SkyBlock_items_potato_spreading.png",
+        "image": "potato_spreading.png"
+    }
+}, {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005740634",
+        "name": "Flint Shovel",
+        "description": "The Flint Shovel is a Shovel that grants a 100% chance for Gravel to drop Flint. The Flint Shovel can also be used as an upgrade for the Gravel Minion so it only produces Flint.",
+        "price": 0.19,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/7/76/Minecraft_items_iron_shovel.png",
+        "image": "flint_shovel.png"
+    }
+}, {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005760088",
+        "name": "Flycatcher",
+        "description": "The Flycatcher is a Minion Upgrade that gives the minion +20% faster resource production. ",
+        "price": 14.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/4/47/SkyBlock_items_enchanted_cobweb.gif",
+        "image": "flycatcher.gif"
+    }
+}, {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005810108",
+        "name": "Enchanter Egg",
+        "description": "The Enchanted Egg is a Minion upgrade that when put in a Chicken Minion makes chickens lay Eggs immediately when spawned.",
+        "price": 0.29,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/a/a1/SkyBlock_items_enchanted_egg.gif",
+        "image": "enchanted_egg.gif"
+    }
+}, {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005820197",
+        "name": "Lesser Soulflow Engine",
+        "description": "The Lesser Soulflow Engine is a minion upgrade that sacrifices minion output by 50% for Soulflow item production every 3 minutes",
+        "price": 4.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/5/59/SkyBlock_items_lesser_soulflow_engine.png",
+        "image": "lesser_soulflow_engine.png"
+    }
+}, {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005840598",
+        "name": "Soulflow Engine",
+        "description": "The Soulflow Engine is a minion upgrade that sacrifices minion output by 50% for Soulflow item production every 3 minutes, If it is added to a Voidling Minion, the minion's output will increase by 3% per minion tier.",
+        "price": 35.99,
+        "category": 7,
+        "image_url": "https://wiki.hypixel.net/images/e/e7/SkyBlock_items_soulflow_engine.png",
+        "image": "soulflow_engine.png"
+    }
+}, {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005840776",
+        "name": "Small Storage",
+        "description": "Minion Chests are a type of storage for Minions, used when they run out of inventory space. They are not Minion Upgrades, but are instead placed next to a minion for an extra 3 Storage Space",
+        "price": 0.29,
+        "category": 8,
+        "image_url": "https://wiki.hypixel.net/images/0/0e/Minecraft_items_chest.png",
+        "image": "storage.png"
+    }
+}, {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005850180",
+        "name": "Medium Storage",
+        "description": "Minion Chests are a type of storage for Minions, used when they run out of inventory space. They are not Minion Upgrades, but are instead placed next to a minion for an extra 9 Storage Space",
+        "price": 0.49,
+        "category": 8,
+        "image_url": "https://wiki.hypixel.net/images/0/0e/Minecraft_items_chest.png",
+        "image": "storage.png"
+    }
+}, {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005851218",
+        "name": "Large Storage",
+        "description": "Minion Chests are a type of storage for Minions, used when they run out of inventory space. They are not Minion Upgrades, but are instead placed next to a minion for an extra 15 Storage Space",
+        "price": 1.49,
+        "category": 8,
+        "image_url": "https://wiki.hypixel.net/images/0/0e/Minecraft_items_chest.png",
+        "image": "storage.png"
+    }
+}, {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005860175",
+        "name": "X-Large Storage",
+        "description": "Minion Chests are a type of storage for Minions, used when they run out of inventory space. They are not Minion Upgrades, but are instead placed next to a minion for an extra 21 Storage Space",
+        "price": 2.49,
+        "category": 8,
+        "image_url": "https://wiki.hypixel.net/images/0/0e/Minecraft_items_chest.png",
+        "image": "storage.png"
+    }
+}, {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5005860263",
+        "name": "XX-Large Storage",
+        "description": "Minion Chests are a type of storage for Minions, used when they run out of inventory space. They are not Minion Upgrades, but are instead placed next to a minion for an extra 27 Storage Space",
+        "price": 3.99,
+        "category": 8,
+        "image_url": "https://wiki.hypixel.net/images/0/0e/Minecraft_items_chest.png",
+        "image": "storage.png"
     }
 }]
