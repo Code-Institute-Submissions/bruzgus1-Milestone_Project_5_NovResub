@@ -812,7 +812,7 @@
         "price": 1.99,
         "category": 7,
         "image_url": "https://wiki.hypixel.net/images/9/9f/SkyBlock_items_krampus_helmet.png",
-        "image": "krampust_helmet.png"
+        "image": "krampus_helmet.png"
     }
 }, {
     "pk": 69,
@@ -836,7 +836,8 @@
         "price": 1.99,
         "category": 7,
         "image_url": "https://wiki.hypixel.net/images/0/09/SkyBlock_items_enchanted_hopper.gif",
-        "image": "enchanter_hopper.gif"
+        "image": "enchanted_hopper.gif"
+
     }
 }, {
     "pk": 71,
