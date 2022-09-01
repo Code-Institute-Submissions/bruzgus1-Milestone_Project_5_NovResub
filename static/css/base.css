@@ -78,6 +78,11 @@ body {
     z-index: -1;
 }
 
+.img {
+    object-fit: contain;
+    height: 20rem;
+}
+
 
 /* -------------------------------- Media Queries */
 
