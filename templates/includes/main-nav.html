@@ -18,12 +18,13 @@
                 Minions
             </a>
             <div class="dropdown-menu border-0 bg-blue" aria-labelledby="minion-link">
-                <a href="" class="dropdown-item text-better-white">All Minions</a>
-                <a href="" class="dropdown-item text-better-white">Mining</a>
-                <a href="" class="dropdown-item text-better-white">Foraging</a>
-                <a href="" class="dropdown-item text-better-white">Farming</a>
-                <a href="" class="dropdown-item text-better-white">Fishing</a>
-                <a href="" class="dropdown-item text-better-white">Combat</a>
+                <a href="{% url 'products' %}?category=mining,foraging,farming,fishing,combat"
+                    class="dropdown-item text-better-white">All Minions</a>
+                <a href="{% url 'products' %}?category=mining" class="dropdown-item text-better-white">Mining</a>
+                <a href="{% url 'products' %}?category=foraging" class="dropdown-item text-better-white">Foraging</a>
+                <a href="{% url 'products' %}?category=farming" class="dropdown-item text-better-white">Farming</a>
+                <a href="{% url 'products' %}?category=fishing" class="dropdown-item text-better-white">Fishing</a>
+                <a href="{% url 'products' %}?category=combat" class="dropdown-item text-better-white">Combat</a>
             </div>
         </li>
 
@@ -33,10 +34,14 @@
                 Minion Improvements
             </a>
             <div class="dropdown-menu border-0 bg-blue" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item text-better-white">All Minion Improvements</a>
-                <a href="" class="dropdown-item text-better-white">Minion Fuels</a>
-                <a href="" class="dropdown-item text-better-white">Minion Upgrades</a>
-                <a href="" class="dropdown-item text-better-white">Minion Storages</a>
+                <a href="{% url 'products' %}?category=minion_fuels,minion_upgrades,minion_storages"
+                    class="dropdown-item text-better-white">All Minion Improvements</a>
+                <a href="{% url 'products' %}?category=minion_fuels" class="dropdown-item text-better-white">Minion
+                    Fuels</a>
+                <a href="{% url 'products' %}?category=minion_upgrades" class="dropdown-item text-better-white">Minion
+                    Upgrades</a>
+                <a href="{% url 'products' %}?category=minion_storages" class="dropdown-item text-better-white">Minion
+                    Storages</a>
             </div>
         </li>
     </ul>
