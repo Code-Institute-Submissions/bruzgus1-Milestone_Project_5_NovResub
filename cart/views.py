@@ -14,12 +14,24 @@ def add_to_cart(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    tier = None
+    if 'product_tier' in request.POST:
+        tier = request.POST['product_tier']
     cart = request.session.get('cart', {})
 
-    if item_id in list(cart.keys()):
-        cart[item_id] += quantity
+    if tier:
+        if item_id in list(cart.keys()):
+            if tier in cart[item_id]['items_by_tier'].keys():
+                cart[item_id]['items_by_tier'][tier] += quantity
+            else:
+                cart[item_id]['items_by_tier'][tier] = quantity
+        else:
+            cart[item_id] = {'items_by_tier': {tier: quantity}}
     else:
-        cart[item_id] = quantity
+        if item_id in list(cart.keys()):
+            cart[item_id] += quantity
+        else:
+            cart[item_id] = quantity
 
     request.session['cart'] = cart
     return redirect(redirect_url)
