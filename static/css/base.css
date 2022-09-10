@@ -101,6 +101,12 @@ a.category-badge>span.badge:hover {
     color: white !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 
 /* -------------------------------- Media Queries */
 
