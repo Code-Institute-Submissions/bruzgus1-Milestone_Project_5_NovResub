@@ -38,7 +38,6 @@ class StripeWH_Handler:
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    username__iexact=billing_details.username,
                     full_name__iexact=billing_details.name,
                     email__iexact=billing_details.email,
                     phone_number__iexact=billing_details.phone,
@@ -65,7 +64,6 @@ class StripeWH_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    username=billing_details.username,
                     full_name=billing_details.name,
                     email=billing_details.email,
                     phone_number=billing_details.phone,
