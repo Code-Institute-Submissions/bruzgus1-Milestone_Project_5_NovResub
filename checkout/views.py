@@ -7,6 +7,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
 from cart.contexts import cart_contents
+from django.contrib.auth import get_user
 
 import stripe
 import json
@@ -20,7 +21,7 @@ def cache_checkout_data(request):
         stripe.PaymentIntent.modify(pid, metadata={
             'cart': json.dumps(request.session.get('cart', {})),
             'save_info': request.POST.get('save_info'),
-            'user': request.user,
+            'username': request.user,
         })
         return HttpResponse(status=200)
     except Exception as e:
@@ -107,6 +108,10 @@ def checkout(request):
         )
 
         order_form = OrderForm()
+        # Get the currently logged-in User.
+        user = get_user(request)
+        # Provide User as initial data to the form
+        order_form = OrderForm(initial={'username': user})
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
