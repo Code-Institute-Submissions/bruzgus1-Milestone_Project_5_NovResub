@@ -2,7 +2,7 @@
 
 [View the live project here.]()
 
-This websites purpose is to be treated as an official extension to the Hypixel Store that you can find [Here](https://store.hypixel.net/).
+This websites purpose is to be treated as an official extension to the Hypixel Store that you can find [Here](https://store.hypixel.net/). On this website Hypixel Skyblock players will be able to buy minions and their upgrades for their island without the risk of being scammed like with the unofficial websites
 
 **User Goals:**
 
@@ -16,7 +16,7 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 - to help the user find what they are looking for
 - to be able to accept and fulfill an order
 
-![how the website looks on diffrent devices]()
+![how the website looks on diffrent devices](/media/am-i-responsive.png)
 
 - **Wireframes**
 
@@ -27,6 +27,26 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 
 
 ## Features
+
+1. Home Page
+    - Has the purpose of the website highlighted
+2. Products Page
+    - Has all of our products
+    - Number of available prodcuts
+    - A sorting feature to narrow down your search
+3. Product Details Page
+    - A picture of the product
+    - Specify the quantity of the product you want
+    - Specify the tier of the product if applicable
+    - A product description
+4. Cart Page
+    - To look over the products you are about to buy
+    - Ability to edit the cart if necessary
+    - Move to checkout page
+    - Your Username to make sure the items are delivered to the correct player
+5. Checkout Page
+    - Standart information necessary for payment
+    - Order summary to once again make sure you don't have unnecessary items in your cart
 
 ## Future Features
 
@@ -67,11 +87,11 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 
 ## Content
 
-- All images and product descriptions were taken from google
+- All images and product descriptions were taken from Hypixel Skyblock Wiki
 
 ## Plagiarism
 
-- A lot of code was taken from botique ado as it was exactly what I needed
+- A lot of code was taken from botique ado as it was exactly what I needed or universally accepted
 
 
 ## Credits
