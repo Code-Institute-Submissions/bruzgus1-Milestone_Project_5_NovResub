@@ -159,3 +159,14 @@ a.category-badge>span.badge:hover {
         height: calc(100vh - 116px);
     }
 }
+
+/* cleaner nav bar on smaller screens */
+@media (max-width: 450px) {
+    .navbar {
+        padding: 8px 8px;
+    }
+
+    .nav-link {
+        padding: 8px;
+    }
+}
