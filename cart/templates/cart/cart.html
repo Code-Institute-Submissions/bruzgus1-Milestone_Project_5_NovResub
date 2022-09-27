@@ -2,6 +2,10 @@
 {% load static %}
 {% load cart_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -17,7 +21,14 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="logo-font mb-4">Shopping Cart</h2>
+            <div class="row">
+                <div class="col">
+                    <h2 class="mb-4 header-start">Cart</h2>
+                </div>
+                <div class="col">
+                    <h2 class="mb-4 header-end">Buying As... {{ user }}</h2>
+                </div>
+            </div>
             <hr>
         </div>
     </div>
@@ -27,10 +38,9 @@
             {% if cart_items %}
             <div class="table-responsive rounded">
                 <table class="table table-sm table-borderless">
-                    <thead class="text-black">
+                    <thead class="text-better-white table-header-color">
                         <tr>
                             <th scope="col">Product Info</th>
-                            <th scope="col"></th>
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
@@ -39,45 +49,24 @@
 
                     {% for item in cart_items %}
                     <tr>
-                        <td class="p-3 w-25">
-                            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                        </td>
-                        <td class="py-3">
+                        <td class="py-3 table-body-color">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0"><strong>tier:
                                 </strong>{% if item.product.has_tiers %}{{ item.tier|upper }}{% else %}N/A{% endif %}
                             </p>
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                         </td>
-                        <td class="py-3">
+                        <td class="py-3 table-body-color">
                             <p class="my-0">${{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="py-3 w-25 table-body-color">
                             <form class="form update-form" method="POST" action="{% url 'update_cart' item.item_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button
-                                                class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }}"
-                                                data-item_id="{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-minus fa-sm"></i>
-                                                </span>
-                                            </button>
-                                        </div>
                                         <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}"
                                             type="number" name="quantity" value="{{ item.quantity }}" min="1" max="39"
                                             data-item_id="{{ item.item_id }}">
-                                        <div class="input-group-append">
-                                            <button
-                                                class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }}"
-                                                data-item_id="{{ item.item_id }}">
-                                                <span>
-                                                    <i class="fas fa-plus fa-sm"></i>
-                                                </span>
-                                            </button>
-                                        </div>
                                         {% if item.product.has_tiers %}
                                         <input type="hidden" name="product_tier" value="{{ item.tier }}">
                                         {% endif %}
@@ -88,14 +77,13 @@
                             <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
                                 data-product_tier="{{ item.tier }}"><small>Remove</small></a>
                         </td>
-                        <td class="py-3">
+                        <td class="py-3 table-body-color">
                             <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            <h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
                             <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                         </td>
                     </tr>
@@ -107,9 +95,9 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                <span class="text-uppercase">Secure Checkout</span>
-                                <span class="icon">
+                            <a href="{% url 'checkout' %}" class="btn btn-green rounded-0 btn-lg btn-outline-black">
+                                <span class="text-uppercase text-better-white">Secure Checkout</span>
+                                <span class="icon text-better-white">
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </a>

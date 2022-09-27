@@ -1,0 +1,21 @@
+.header-start {
+    display: flex;
+    justify-content: start;
+}
+
+.header-end {
+    display: flex;
+    justify-content: end;
+}
+
+.table-header-color {
+    background-color: #337BB8;
+}
+
+.table-body-color {
+    background-color: #EAEEF2;
+}
+
+.btn-green {
+    background-color: #5bb75b;
+}

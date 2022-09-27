@@ -1,14 +1,20 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 from products.models import Product
+from django.contrib.auth import get_user
 
 # Create your views here.
 
 
 def view_cart(request):
     """ A view that renders the cart contents page """
+    # Get the currently logged-in User.
+    user = get_user(request)
+    context = {
+        'user': user,
+    }
 
-    return render(request, 'cart/cart.html')
+    return render(request, 'cart/cart.html', context)
 
 
 def update_cart(request, item_id):
