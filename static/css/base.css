@@ -164,6 +164,15 @@ a.category-badge>span.badge:hover {
     /* text-info */
 }
 
+.footer {
+    height: 90%;
+    width: 100%;
+    top: 90%;
+    left: 0;
+    position: fixed;
+    background: #246398 !important;
+    z-index: -1;
+}
 
 /* ------------------------------- bootstrap toasts */
 

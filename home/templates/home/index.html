@@ -26,3 +26,14 @@
     </div>
 </div>
 {% endblock %}
+
+{% block extra_js %}
+{{ block.super }}
+<script id="mcjs">
+    ! function (c, h, i, m, p) {
+        m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m,
+            p)
+    }(document, "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/fbcc6c138d99ded55babf0e9e/a47d6eb1ac553e3971fcca837.js");
+</script>
+{% endblock %}

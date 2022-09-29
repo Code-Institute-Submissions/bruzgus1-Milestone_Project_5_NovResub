@@ -26,7 +26,6 @@ This websites purpose is to be treated as an official extension to the Hypixel S
     - Profiles Page Wireframe - [View](/media/profiles_page.png)
 
 
-
 ## Model Relationship Diagram
 
 ![Model Diagram](/media/relational_database_diagram.png)
@@ -61,6 +60,14 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 3. Make product managment on the frontend, not just the admin panel.
 
 
+## Marketing
+
+1. ![Facebook Page](/media/Facebook_Page.png)
+2. ![News Letter](/media/news_letter.png)
+3. This is a B2C type business
+4. As this is supposed to be an extension of an official site the best Marketing Strategy is by using Content Creators who already work closely with the Hypixel network
+
+
 ## Bugs
 - When in mobile view if you click the search bar and switch to desktop view without touching anything, there are 2 search bars, it disappears when you click on anything, besides the second search bar
 ![Search Bar Bug](/media/search_bar_bug.png)
@@ -79,11 +86,17 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 ![lighthouse scores screenshot]()
 
 ## Manual Testing
-
+1. Checked all screen sizes
+2. Tried inputing incorrect data into form fields
+3. Closed the page before checkout_success to see if web hook created the order
+4. Tried to give a negative number in the quantity input
+5. Tried to make a purchase when I wasn't logged in
+6. Checked the website on different browsers (Safari, Chrome, Brave Browser)
+7. Checked the website on different devices (PCs, Macbook, Different Iphone Models, Android Phones)
 
 
 ## Validation Testing
-
+No validating was done if it didn't break functionality as I didn't see it as "must" in project requirments
 
 ## Deployment
 
