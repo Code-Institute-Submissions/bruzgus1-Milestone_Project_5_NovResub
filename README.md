@@ -19,11 +19,17 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 ![how the website looks on diffrent devices](/media/am-i-responsive.png)
 
 - **Wireframes**
+    - Home Page Wireframe - [View](/media/home_page.png)
+    - Products Page Wireframe - [View](/media/products_page.png)
+    - Cart Page Wireframe - [View](/media/cart_page.png)
+    - Checkout Page Wireframe - [View](/media/checkout_page.png)
+    - Profiles Page Wireframe - [View](/media/profiles_page.png)
 
 
 
 ## Model Relationship Diagram
 
+![Model Diagram](/media/relational_database_diagram.png)
 
 
 ## Features
@@ -50,9 +56,14 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 
 ## Future Features
 
+1. Change the price in proportion of the tier you choose (If its an item that has a tier).
+2. Add a an option to leave a review in the product details page.
+3. Make product managment on the frontend, not just the admin panel.
+
 
 ## Bugs
-
+- When in mobile view if you click the search bar and switch to desktop view without touching anything, there are 2 search bars, it disappears when you click on anything, besides the second search bar
+![Search Bar Bug](/media/search_bar_bug.png)
 
 
 ## Console Errors
