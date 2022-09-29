@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')  # Changed django secret key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bruzgus1minion-shop.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-bruzgus1-milestoneproje-19ws7v4ol21.ws-eu69.gitpod.io']
 
@@ -121,8 +121,16 @@ WSGI_APPLICATION = 'minion_shop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
 
 
@@ -141,7 +149,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    }
 ]
 
 

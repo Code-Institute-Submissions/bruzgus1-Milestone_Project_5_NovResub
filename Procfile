@@ -1,0 +1,1 @@
+web: gunicorn bruzgus1minion-shop.wsgi:application
