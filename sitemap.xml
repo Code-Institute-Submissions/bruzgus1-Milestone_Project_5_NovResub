@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/cart/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=mining,foraging,farming,fishing,combat</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=mining</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=foraging</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=farming</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=fishing</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=combat</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=minion_fuels,minion_upgrades,minion_storages</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=minion_fuels</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=minion_upgrades</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/products/?category=minion_storages</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bruzgus1minion-shop.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-09-30T09:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
