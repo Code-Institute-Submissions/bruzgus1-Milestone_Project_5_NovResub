@@ -79,11 +79,15 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 
 ![Console Error](/media/console_error.png)
 
+- when checking the products page and products details page, a console error shows up that does not effect any functionality, I checked with my mentor, and tutoring, and we couldn't figure out why its showing up, regarless it does not effect functionality in any way
+
+![Products Console Error](/media/products-console-error.png)
+
 ## Automated Testing
 
 - Each page of the site was evaluated using Lighthouse to assess them on four metrics; Performance, Accessibility, Best Practices & Search Engine Optimization (SEO).
 
-![lighthouse scores screenshot]()
+![lighthouse scores screenshot](/media/lighthouse%20score.png)
 
 ## Manual Testing
 1. Checked all screen sizes
@@ -94,9 +98,6 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 6. Checked the website on different browsers (Safari, Chrome, Brave Browser)
 7. Checked the website on different devices (PCs, Macbook, Different Iphone Models, Android Phones)
 
-
-## Validation Testing
-No validating was done if it didn't break functionality as I didn't see it as "must" in project requirments
 
 ## Deployment
 
