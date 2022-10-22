@@ -72,18 +72,19 @@
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button
-                                            class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ product.id }}"
+                                            class="decrement-qty btn btn-red rounded-0 decrement-qty_{{ product.id }} text-better-white btn-black-border"
                                             data-item_id="{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input id_qty_{{ product.id }}" type="number"
-                                        name="quantity" value="1" min="1" max="39" data-item_id="{{ product.id }}">
+                                    <input class="form-control qty_input id_qty_{{ product.id }} btn-black-border"
+                                        type="number" name="quantity" value="1" min="1" max="39"
+                                        data-item_id="{{ product.id }}">
                                     <div class="input-group-append">
                                         <button
-                                            class="increment-qty btn btn-black rounded-0 increment-qty_{{ product.id }}"
+                                            class="increment-qty btn btn-green rounded-0 increment-qty_{{ product.id }} text-better-white btn-black-border"
                                             data-item_id="{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
@@ -95,59 +96,26 @@
                         </div>
 
                         <div class="col{% if t %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                            <a href="{% url 'products' %}" class="btn btn-black-border rounded-0 mt-5">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                            <input type="submit"
+                                class="btn btn-green btn-black-border rounded-0 text-uppercase mt-5 text-better-white"
+                                value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        <div style="margin-top: 50px;">
+                            <a href="{% url 'positive_reviews' product.id %}"
+                                class="btn btn-green rounded-0 btn-black-border btn-lg">
+                                <span class="text-uppercase text-better-white">positive reviews</span>
+                            </a>
+                        </div>
                         {% endwith %}
                     </div>
                 </form>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 card mb-4  mt-3 ">
-            <div class="card-body">
-                {% if user.is_authenticated %}
-
-                <h3>Leave A Positive Review:</h3>
-                <form method="post" style="margin-top: 1.3em;">
-                    {% csrf_token %}
-                    <div>
-                        Posting As: {{ positive_review_form.name }}
-                    </div>
-                    <div>
-                        {{ positive_review_form.body | as_crispy_field }}
-                    </div>
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </form>
-                {% endif %}
-            </div>
-            <div>
-                <h3>Positive Reviews:</h3>
-                <div class="card-body">
-                    <!-- We want a for loop inside the empty control tags to iterate through each positive reviews in positive_reviews -->
-                    {% for positive_review in positive_reviews %}
-                    <div class="comments" style="padding: 10px;">
-                        <p class="font-weight-bold">
-                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                            {{ positive_review.name }}
-                            <span class=" text-muted font-weight-normal">
-                                <!-- The comment's created date goes here -->
-                                {{ positive_review.created_on }}
-                            </span> wrote:
-                        </p>
-                        <!-- The body of the comment goes before the | -->
-                        {{ positive_review.body | linebreaks }}
-                    </div>
-                    <!-- Our for loop ends here -->
-                    {% endfor %}
-                </div>
             </div>
         </div>
     </div>

@@ -64,6 +64,19 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+
+    template = 'products/product_detail.html'
+    context = {
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+def positive_reviews(request, product_id):
+    """ A view to show individual product positive reviews """
+
+    product = get_object_or_404(Product, pk=product_id)
     positive_reviews = product.positive_reviews.order_by("-created_on")
     # Get the currently logged-in User.
     user = get_user(request)
@@ -81,12 +94,11 @@ def product_detail(request, product_id):
         else:
             messages.error(request, "Your Positive Review was not submitted, only 1 review per user")
 
-    template = 'products/product_detail.html'
+    template = 'products/positive_reviews.html'
     context = {
         'product': product,
         "positive_reviews": positive_reviews,
         "positive_review_form": positive_review_form,
-
     }
 
     return render(request, template, context)

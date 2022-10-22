@@ -1,0 +1,16 @@
+.review-box {
+    background-color: #EAEEF2;
+    border-style: solid solid none solid;
+}
+
+.btn-green {
+    background-color: #5bb75b;
+}
+
+.btn-black-border {
+    border: 1px solid black;
+}
+
+.btn-red {
+    background-color: red;
+}
