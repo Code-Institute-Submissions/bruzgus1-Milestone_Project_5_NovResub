@@ -6,9 +6,9 @@ from django.forms import TextInput
 class PositiveReviewForm(forms.ModelForm):
     class Meta:
         model = PositiveReview
-        fields = ('body', 'name',)
+        fields = ('review', 'name',)
         widgets = {
             'name': TextInput(attrs={
                 'type': 'text',
-                'readonly': '',})
+                'readonly': '', })
         }

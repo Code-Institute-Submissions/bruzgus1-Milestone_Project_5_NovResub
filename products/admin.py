@@ -24,11 +24,11 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class PositiveReviewAdmin(admin.ModelAdmin):
-    list_display = ('name', 'body', 'product', 'created_on')
+    list_display = ('name', 'review', 'product', 'created_on')
     list_filter = ('created_on',)
-    search_fields = ('name', 'email', 'body')
+    search_fields = ('name', 'review')
 
 
-admin.site.register(PositiveReview,PositiveReviewAdmin)
+admin.site.register(PositiveReview ,PositiveReviewAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
