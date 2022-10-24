@@ -44,7 +44,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #246398;
+    background: #0d4d9a;
     color: #F5FFFA;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .bg-blue {
-    background: #246398 !important;
+    background: #105FBD !important;
 }
 
 .dropdown-item:hover {
