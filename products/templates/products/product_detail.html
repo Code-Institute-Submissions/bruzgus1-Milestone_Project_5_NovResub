@@ -105,9 +105,15 @@
                             <input type="submit"
                                 class="btn btn-green btn-black-border rounded-0 text-uppercase mt-5 text-better-white"
                                 value="Add to Bag">
+                        </div>
+                        <div class="row w-100">
                             <a href="{% url 'positive_reviews' product.id %}"
                                 class="btn btn-green rounded-0 btn-black-border btn-lg" style="margin-top: 1.5em;">
                                 <span class="text-uppercase text-better-white">positive reviews</span>
+                            </a>
+                            <a href="{% url 'negative_reviews' product.id %}"
+                                class="btn btn-red rounded-0 btn-black-border btn-lg" style="margin-top: 1.5em;">
+                                <span class="text-uppercase text-better-white">negative reviews</span>
                             </a>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">

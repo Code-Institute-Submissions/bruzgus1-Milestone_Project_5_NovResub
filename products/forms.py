@@ -1,14 +1,14 @@
-from .models import PositiveReview
 from django import forms
-from django.forms import TextInput
+from .models import PositiveReview, NegativeReview
 
 
 class PositiveReviewForm(forms.ModelForm):
     class Meta:
         model = PositiveReview
-        fields = ('review', 'name',)
-        widgets = {
-            'name': TextInput(attrs={
-                'type': 'text',
-                'readonly': '', })
-        }
+        fields = ('positive_review', 'name',)
+
+
+class NegativeReviewForm(forms.ModelForm):
+    class Meta:
+        model = NegativeReview
+        fields = ('negative_review', 'name',)

@@ -35,11 +35,25 @@ class PositiveReview(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE,
                                 related_name="positive_reviews")
     name = models.CharField(null=True, blank=True, max_length=60)
-    review = models.TextField()
+    positive_review = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ["created_on"]
 
     def __str__(self):
-        return f"Product {self.review} by {self.name}"
+        return f"Product {self.positive_review} by {self.name}"
+
+
+class NegativeReview(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE,
+                                related_name="negative_reviews")
+    name = models.CharField(null=True, blank=True, max_length=60)
+    negative_review = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Product {self.negative_review} by {self.name}"

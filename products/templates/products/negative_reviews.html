@@ -31,11 +31,11 @@
             <div class="card-body">
                 {% if user.is_authenticated %}
 
-                <h3>Leave A Positive Review:</h3>
+                <h3>Leave A Negative Review:</h3>
                 <form method="post" style="margin-top: 1.3em;">
                     {% csrf_token %}
                     <div>
-                        {{ positive_review_form.positive_review | as_crispy_field }}
+                        {{ negative_review_form.negative_review | as_crispy_field }}
                     </div>
                     <button type="submit" class="btn btn-blue btn-signup btn-lg text-better-white">Submit</button>
                 </form>
@@ -44,20 +44,20 @@
         </div>
         <div class="col-sm">
             <div class="card-body">
-                <h3>Positive Reviews:</h3>
-                <!-- We want a for loop inside the empty control tags to iterate through each positive review in positive_reviews -->
-                {% for positive_review in positive_reviews %}
+                <h3>Negative Reviews:</h3>
+                <!-- We want a for loop inside the empty control tags to iterate through each negative review in negative_reviews -->
+                {% for negative_review in negative_reviews %}
                 <div class="comments review-box" style="padding: 10px;">
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
-                        {{ positive_review.name }}
+                        {{ negative_review.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- The comment's created date goes here -->
-                            {{ positive_review.created_on }}
+                            {{ negative_review.created_on }}
                         </span> wrote:
                     </p>
                     <!-- The body of the comment goes before the | -->
-                    {{ positive_review.positive_review | linebreaks }}
+                    {{ negative_review.negative_review | linebreaks }}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}

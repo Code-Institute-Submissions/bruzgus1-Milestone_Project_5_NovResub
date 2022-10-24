@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, PositiveReview
+from .models import Product, Category, PositiveReview, NegativeReview
 
 # Register your models here.
 
@@ -24,11 +24,18 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class PositiveReviewAdmin(admin.ModelAdmin):
-    list_display = ('name', 'review', 'product', 'created_on')
+    list_display = ('name', 'positive_review', 'product', 'created_on')
     list_filter = ('created_on',)
-    search_fields = ('name', 'review')
+    search_fields = ('name', 'positive_review')
 
 
-admin.site.register(PositiveReview ,PositiveReviewAdmin)
+class NegativeReviewAdmin(admin.ModelAdmin):
+    list_display = ('name', 'negative_review', 'product', 'created_on')
+    list_filter = ('created_on',)
+    search_fields = ('name', 'negative_review')
+
+
+admin.site.register(NegativeReview, NegativeReviewAdmin)
+admin.site.register(PositiveReview, PositiveReviewAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

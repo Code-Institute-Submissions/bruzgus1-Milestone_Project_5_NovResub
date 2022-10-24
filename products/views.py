@@ -4,7 +4,7 @@ from django.contrib.auth import get_user
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
-from .forms import PositiveReviewForm
+from .forms import PositiveReviewForm, NegativeReviewForm
 
 # Create your views here.
 
@@ -73,7 +73,7 @@ def product_detail(request, product_id):
     return render(request, template, context)
 
 
-def positive_reviews(request, product_id):
+def positive_reviews_view(request, product_id):
     """ A view to show individual product positive reviews """
 
     product = get_object_or_404(Product, pk=product_id)
@@ -92,13 +92,44 @@ def positive_reviews(request, product_id):
             positive_review.product = product
             positive_review.save()
         else:
-            messages.error(request, "Your Positive Review was not submitted, only 1 review per user")
+            messages.error(request, "Your Positive Review was not submitted")
 
     template = 'products/positive_reviews.html'
     context = {
         'product': product,
         "positive_reviews": positive_reviews,
         "positive_review_form": positive_review_form,
+    }
+
+    return render(request, template, context)
+
+
+def negative_reviews_view(request, product_id):
+    """ A view to show individual product negative reviews """
+
+    product = get_object_or_404(Product, pk=product_id)
+    negative_reviews = product.negative_reviews.order_by("-created_on")
+    # Get the currently logged-in User.
+    user = get_user(request)
+    # Provide User as initial data to the form
+    negative_review_form = NegativeReviewForm(initial={'name': user})
+
+    if request.method == 'POST':
+        negative_review_form = NegativeReviewForm(data=request.POST)
+        if negative_review_form.is_valid():
+            print(negative_review_form.is_valid())
+            negative_review_form.instance.name = request.user.username
+            negative_review = negative_review_form.save(commit=False)
+            negative_review.product = product
+            negative_review.save()
+        else:
+            messages.error(request, "Your negative Review was not submitted")
+
+    template = 'products/negative_reviews.html'
+    context = {
+        'product': product,
+        "negative_reviews": negative_reviews,
+        "negative_review_form": negative_review_form,
     }
 
     return render(request, template, context)
