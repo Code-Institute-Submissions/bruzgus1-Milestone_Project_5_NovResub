@@ -27,6 +27,7 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
+    path('favorites/', include('favorites.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'minion_shop.views.handler404'
