@@ -141,8 +141,8 @@ a.category-badge>span.badge:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #105FBD;
+    border: 1px solid #0c478e;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -154,9 +154,9 @@ a.category-badge>span.badge:hover {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
-    color: #fff;
-    background-color: #222;
-    border-color: #222;
+    color: #F5FFFA;
+    background-color: #105FBD;
+    border-color: #0c478e;
 }
 
 .allauth-form-inner-content a {

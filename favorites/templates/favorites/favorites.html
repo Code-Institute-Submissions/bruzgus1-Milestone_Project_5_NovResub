@@ -28,6 +28,7 @@
             <img class="card-img-top img-fluid img" src="{{ favorite_product.product.image.url }}"
                 alt="{{ favorite_product.product.name }}">
         </div>
+        {{ favorite_product.user }}
         {% endfor %}
     </div>
 </div>
