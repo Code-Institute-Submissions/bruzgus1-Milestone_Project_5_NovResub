@@ -64,10 +64,15 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    favorited = False
+
+    if request.user in product.favorites.all():
+        favorited = True
 
     template = 'products/product_detail.html'
     context = {
         'product': product,
+        'favorited': favorited,
     }
 
     return render(request, template, context)
@@ -117,7 +122,6 @@ def negative_reviews_view(request, product_id):
     if request.method == 'POST':
         negative_review_form = NegativeReviewForm(data=request.POST)
         if negative_review_form.is_valid():
-            print(negative_review_form.is_valid())
             negative_review_form.instance.name = request.user.username
             negative_review = negative_review_form.save(commit=False)
             negative_review.product = product
@@ -133,3 +137,17 @@ def negative_reviews_view(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def add_favorite(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    product.favorites.add(request.user)
+
+    return redirect('product_detail', product_id)
+
+
+def remove_favorite(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    product.favorites.remove(request.user)
+
+    return redirect('product_detail', product_id)
