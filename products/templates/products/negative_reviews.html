@@ -53,14 +53,17 @@
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
                         {{ negative_review.name }}
                         <span class=" text-muted font-weight-normal">
-                            <!-- The comment's created date goes here -->
-                            {{ negative_review.created_on }}
-                        </span> wrote:
+                            wrote:
+                        </span>
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ negative_review.negative_review | linebreaks }}
                 </div>
+                {% if negative_review.name == request.user.username %}
+                <a href="{% url 'edit_negative_review' negative_review.id %}" class="card-link">Edit</a>
+                <a href="{% url 'delete_negative_review' negative_review.id %}" class="card-link">delete</a>
                 <!-- Our for loop ends here -->
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

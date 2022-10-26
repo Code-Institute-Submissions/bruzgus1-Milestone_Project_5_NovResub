@@ -10,4 +10,6 @@ urlpatterns = [
     path('remove_favorites/<product_id>', views.remove_favorite, name='remove_favorite'),
     path('edit_positive_review/<positive_review_id>', views.edit_positive_review, name='edit_positive_review'),
     path('delete_positive_review/<positive_review_id>', views.delete_positive_review, name='delete_positive_review'),
+    path('edit_negative_review/<negative_review_id>', views.edit_negative_review, name='edit_negative_review'),
+    path('delete_negative_review/<negative_review_id>', views.delete_negative_review, name='delete_negative_review'),
 ]

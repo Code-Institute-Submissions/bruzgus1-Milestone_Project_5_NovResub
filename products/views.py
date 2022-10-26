@@ -6,7 +6,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category, PositiveReview, NegativeReview
 from .forms import PositiveReviewForm, NegativeReviewForm
 from favorites.models import Favorite
-from datetime import datetime
 
 # Create your views here.
 
@@ -184,4 +183,34 @@ def delete_positive_review(request, positive_review_id):
     positive_review = get_object_or_404(PositiveReview, id=positive_review_id)
     positive_review.delete()
     messages.success(request, "Your Positive Review Was Deleted Successfully")
+    return redirect('products')
+
+
+def edit_negative_review(request, negative_review_id):
+
+    negative_review = get_object_or_404(NegativeReview, id=negative_review_id)
+
+    if request.method == 'POST':
+        existing_negative_review = NegativeReviewForm(request.POST, instance=negative_review)
+        if existing_negative_review.is_valid():
+            existing_negative_review.instance.name = request.user.username
+            existing_negative_review.save()
+            messages.success(request, "Your Negative Review Was Updated")
+            return redirect(reverse('products'))
+        else:
+            messages.error(request, "Your Negative Review Was Not Updated")
+    existing_negative_review = NegativeReviewForm(instance=negative_review)
+
+    context = {
+        'existing_negative_review': existing_negative_review,
+        "negative_review": negative_review,
+    }
+    return render(request, 'products/edit_negative_review.html', context)
+
+
+def delete_negative_review(request, negative_review_id):
+
+    negative_review = get_object_or_404(NegativeReview, id=negative_review_id)
+    negative_review.delete()
+    messages.success(request, "Your Negative Review Was Deleted Successfully")
     return redirect('products')
