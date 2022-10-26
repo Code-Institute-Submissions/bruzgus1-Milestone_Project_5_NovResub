@@ -3,9 +3,10 @@ from django.contrib import messages
 from django.contrib.auth import get_user
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, PositiveReview, NegativeReview
 from .forms import PositiveReviewForm, NegativeReviewForm
 from favorites.models import Favorite
+from datetime import datetime
 
 # Create your views here.
 
@@ -92,7 +93,6 @@ def positive_reviews_view(request, product_id):
     if request.method == 'POST':
         positive_review_form = PositiveReviewForm(data=request.POST)
         if positive_review_form.is_valid():
-            print(positive_review_form.is_valid())
             positive_review_form.instance.name = request.user.username
             positive_review = positive_review_form.save(commit=False)
             positive_review.product = product
@@ -155,3 +155,33 @@ def remove_favorite(request, product_id):
     product.favorites.remove(request.user)
 
     return redirect('product_detail', product_id)
+
+
+def edit_positive_review(request, positive_review_id):
+
+    positive_review = get_object_or_404(PositiveReview, id=positive_review_id)
+
+    if request.method == 'POST':
+        existing_positive_review = PositiveReviewForm(request.POST, instance=positive_review)
+        if existing_positive_review.is_valid():
+            existing_positive_review.instance.name = request.user.username
+            existing_positive_review.save()
+            messages.success(request, "Your Positive Review Was Updated")
+            return redirect(reverse('products'))
+        else:
+            messages.error(request, "Your Positive Review Was Not Updated")
+    existing_positive_review = PositiveReviewForm(instance=positive_review)
+
+    context = {
+        'existing_positive_review': existing_positive_review,
+        "positive_review": positive_review,
+    }
+    return render(request, 'products/edit_positive_review.html', context)
+
+
+def delete_positive_review(request, positive_review_id):
+
+    positive_review = get_object_or_404(PositiveReview, id=positive_review_id)
+    positive_review.delete()
+    messages.success(request, "Your Positive Review Was Deleted Successfully")
+    return redirect('products')
