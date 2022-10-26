@@ -30,8 +30,6 @@
             <img class="card-img-top img-fluid img" src="{{ favorite_product.product.image.url }}"
                 alt="{{ favorite_product.product.name }}">
         </div>
-        {% else %}
-        <p class="lead mb-5">You don't have anything favorited</p>
         {% endif %}
         {% endfor %}
     </div>

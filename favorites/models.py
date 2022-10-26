@@ -9,6 +9,7 @@ class Favorite(models.Model):
     """
     A Favorite model so users can save products as their favorites
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True,
+                             blank=True)
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
 

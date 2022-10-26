@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import PositiveReviewForm, NegativeReviewForm
+from favorites.models import Favorite
 
 # Create your views here.
 
@@ -141,6 +142,7 @@ def negative_reviews_view(request, product_id):
 
 def add_favorite(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
+    Favorite.objects.get_or_create(product_id=product_id, user=request.user)
     product.favorites.add(request.user)
 
     return redirect('product_detail', product_id)
@@ -148,6 +150,8 @@ def add_favorite(request, product_id):
 
 def remove_favorite(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
+    favorite = Favorite.objects.get(product_id=product_id, user=request.user)
+    favorite.delete()
     product.favorites.remove(request.user)
 
     return redirect('product_detail', product_id)
