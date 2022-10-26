@@ -90,9 +90,15 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 ![lighthouse scores screenshot](/media/lighthouse%20score.png)
 
 ## Manual Testing
-1. Checked all screen sizes
-2. Tried inputing incorrect data into form fields
-3. Closed the page before checkout_success to see if web hook created the order
+- 1.1) Clicked on products/shop now button to see if it opens the products page
+- 1.2) Tried and open product details page in favorite page and products page to see if it opens product details page
+- 1.3) Added products to cart to see if total purchase cost would update
+- 1.4) Clicked all available buttons in the navigation menu to see that they all open the correct pages
+- 1.5) Added positive reviews to product details page so users can create and read them if they are logged in or update and delete them if they created them
+- 1.6) Added negative reviews to product details page so users can create and read them if they are logged in or update and delete them if they created them
+
+
+
 4. Tried to give a negative number in the quantity input
 5. Tried to make a purchase when I wasn't logged in
 6. Checked the website on different browsers (Safari, Chrome, Brave Browser)
@@ -101,12 +107,15 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 
 ## Deployment
 
-- Set the Debug Flag to False
-- Set up Procfile
-- Pushed the final code to github
+- Set the Debug Flag to False.
+- Set up Procfile.
+- Set up runtime.txt file with current python version.
+- Updated my requirements.txt file with all libraries and their versions.
+- Pushed the final code to github.
 - Create a new Heroku app.
-- Set up my Config Vars
-- Set up my database
+- Set up my database by adding Heroku Postgres to my heroku app
+- Set up AWS
+- Set up my Config Vars (DATABASE_URL, SECRET_KEY, STRIPE_SECRET_KEY, AWS_ACCESS_KEY_ID) just to name a few.
 - Link the Heroku app to repository.
 - Click on **Deploy**.
 
