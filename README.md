@@ -90,19 +90,34 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 ![lighthouse scores screenshot](/media/lighthouse%20score.png)
 
 ## Manual Testing
-- 1.1) Clicked on products/shop now button to see if it opens the products page
-- 1.2) Tried and open product details page in favorite page and products page to see if it opens product details page
-- 1.3) Added products to cart to see if total purchase cost would update
-- 1.4) Clicked all available buttons in the navigation menu to see that they all open the correct pages
-- 1.5) Added positive reviews to product details page so users can create and read them if they are logged in or update and delete them if they created them
-- 1.6) Added negative reviews to product details page so users can create and read them if they are logged in or update and delete them if they created them
-
-
-
-4. Tried to give a negative number in the quantity input
-5. Tried to make a purchase when I wasn't logged in
-6. Checked the website on different browsers (Safari, Chrome, Brave Browser)
-7. Checked the website on different devices (PCs, Macbook, Different Iphone Models, Android Phones)
+- 1.1) Clicked on products/shop now button to see if it opens the products page.
+- 1.2) Tried and open product details page in favorite page and products page to see if it opens product details page.
+- 1.3) Added products to cart to see if total purchase cost would update.
+- 1.4) Clicked all available buttons in the navigation menu to see that they all open the correct pages.
+- 1.5) Tried to open positive reviews in product details page to see if users can create and read them if they are logged in or update and delete them if they created them.
+- 1.6) Tried to open negative reviews in product details page to so see if users can create and read them if they are logged in or update and delete them if they created them.
+- 2.1) Tried registering several accounts to make sure the function was working correctly.
+- 2.2) Tried inputing the wrong login information to test validation, tried entering the correct login information, tried logging out.
+- 2.4) Registered multiple accounts to make sure the confirmation emails are being sent.
+- 2.5) Tried changing user profile information, tried viewing order history to make sure its correct, checked that the profile information is being inputted if its saved in the user profile
+- 3.1) Checked to make sure sorting worked as intended
+- ![Sorting 1](/media/sorting_1.png)
+- 3.2) Checked to make sure sorting by category worked  correctly
+- ![Sorting 2](/media/sorting_2.png) ![Sorting 3](/media/sorting_3.png)
+- 3.3) Tried searching for several products by name or description to make sure I find the correct ones
+- ![Searching](/media/searching.png)
+- 3.4) Tried searching several categories and descriptions to see how many products I find and if its accurate
+- ![Product Count](/media/product_count.png)
+- 3.5) Tried favoriting products, by being logged in as different users to make sure only logged in users favorites are shown
+- 4.1) Tried negative numbers in the quantity input
+- ![Quantity Input](/media/quantity_input.png)
+- 4.2) Checked the cart while it was empty and when items of different types and tiers were added
+- 4.3) Tried removing products from the cart and updating quantity
+- 4.4) During check out their is a list of the products the user is buying so he knows if he added something he didn't intend to
+- 4.5) Tried adding products of all categories and tiers to see if everything was being added correctly
+- 4.6) Tried selecting and adding the same products of different tiers to see if they were being counted as seperate
+- 4.7) Checked to see if the subtotal of the products in the cart page was accurate
+- 4.8) Tried to make a purchase when I wasn't logged in, Tried to make a purchase without filling out the form
 
 
 ## Deployment

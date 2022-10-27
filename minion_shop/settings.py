@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['bruzgus1minion-shop.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-bruzgus1-milestoneproje-19ws7v4ol21.ws-eu72.gitpod.io', 'https://bruzgus1minion-shop.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-bruzgus1-milestoneproje-19ws7v4ol21.ws-eu73.gitpod.io', 'https://bruzgus1minion-shop.herokuapp.com/']
 
 
 # Application definition
