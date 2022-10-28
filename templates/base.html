@@ -97,9 +97,6 @@
                         </a>
                         <div class="dropdown-menu border-0 bg-blue" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item text-better-white">Product Management</a>
-                            {% endif %}
                             <a href="{% url 'favorites' %}" class="dropdown-item text-better-white">My Favorites</a>
                             <a href="{% url 'profile' %}" class="dropdown-item text-better-white">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item text-better-white">Logout</a>

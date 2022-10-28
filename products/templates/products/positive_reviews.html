@@ -61,7 +61,7 @@
                 </div>
                 {% if positive_review.name == request.user.username %}
                 <a href="{% url 'edit_positive_review' positive_review.id %}" class="card-link">Edit</a>
-                <a href="{% url 'delete_positive_review' positive_review.id %}" class="card-link">delete</a>
+                <a href="{% url 'delete_positive_review' positive_review.id %}" class="card-link text-danger">delete</a>
                 <!-- Our for loop ends here -->
                 {% endif %}
                 {% endfor %}

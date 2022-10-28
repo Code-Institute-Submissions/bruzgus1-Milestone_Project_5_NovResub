@@ -1,6 +1,6 @@
 # Hypixel Skyblock Minion Shop Website
 
-[View the live project here.]()
+[View the live project here.](https://bruzgus1minion-shop.herokuapp.com/)
 
 This websites purpose is to be treated as an official extension to the Hypixel Store that you can find [Here](https://store.hypixel.net/). On this website Hypixel Skyblock players will be able to buy minions and their upgrades for their island without the risk of being scammed like with the unofficial websites
 
@@ -115,6 +115,7 @@ This websites purpose is to be treated as an official extension to the Hypixel S
 - 1.6) Tried to open negative reviews in product details page to so see if users can create and read them if they are logged in or update and delete them if they created them. Result: PASSED
 - 2.1) Tried registering several accounts to make sure the function was working correctly. Result: PASSED
 - 2.2) Tried inputing the wrong login information to test validation, tried entering the correct login information, tried logging out. Result: PASSED
+- 2.3) tried resetting a password and made sure the email was sent and the link worked correctly. Result: PASSED
 - 2.4) Registered multiple accounts to make sure the confirmation emails are being sent. Result: PASSED
 - 2.5) Tried changing user profile information, tried viewing order history to make sure its correct, checked that the profile information is being inputted if its saved in the user profile. Result: PASSED
 - 3.1) Checked to make sure sorting worked as intended. Result: PASSED
