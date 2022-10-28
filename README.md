@@ -66,7 +66,9 @@ This websites purpose is to be treated as an official extension to the Hypixel S
     - ![Order Summary](/media/order_summary.png)
 6. Authentication
     - Log in/Log out pages for user authentication achieved using allauth
+    - ![Log in](/media/log_in.png)
     - Registration page achived using allauth
+    - ![register](/media/register.png)
 
 ## Future Features
 
